@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Proposal Website</title>
+    <style> 
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFBFBF;
+}
+
+header {
+  background-color: #333;
+  color: #FFBFBF;
+  text-align: center;
+  padding: 1em;
+}
+
+main {
+  background-color: #FFBFBF;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+h1, h2 {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.proposal .p .span{
+font-size: 2rem;
+}
+
+#yes, #no {
+  margin-top: 1em;
+  padding: 1em;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#yes {
+  background-color: green;
+  color: white;
+  margin-right: 50%;
+  transition: 0.5s;
+}
+
+#no {
+  background-color: red;
+  color: white;
+  transition: 0.5s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.details h2{
+  margin-top: 10px;
+}
+
+#message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #333;
+  color: #FFBFBF;
+  text-align: center;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Can You Forgive Me?</h1>
+    </header>
+    <main>
+      <section id="proposal">
+        <h2>Apologies! </h2>
+        <p>I really apologies for the behavior that i have done to upset you. I ask for the sincer apology. Can you forgive me. <span>&#128532;</span></p>
+        <button id="yes">Yes!</button>
+        <button id="no">No, sorry.</button>
+      </section>
+
+      <section id="details">
+
+        <h2>Details</h2>
+        <p>Hey PRATIBHA, I'm really sorry for not messaging you for more than an hour. I know how much it means to you to stay connected, and I let you down. I hope you can forgive me for that. I hope you're feeling okay and getting the care you need. Let me know if there's anything I can do to help. Sending you lots of love and wishing you a speedy recovery. </p>
+      </section>
+    </main>
+    <div id="message"></div>
+    <script>
+const yesButton = document.getElementById('yes');
+const noButton = document.getElementById('no');
+const message = document.getElementById('message');
+let noClicks = 0;
+
+yesButton.addEventListener('click', () => {
+  alert('Thank You sooooooooooo....... much😍 💗!    I LOVE YOU BABY 😘😁💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋');
+});
+
+noButton.addEventListener('click', () => {
+  noClicks++;
+  if (noClicks < 5) {
+    message.textContent = `Click Yes! please (${noClicks} clicks)`;
+  } else {
+    message.textContent = `I will keep asking untill you say yes! (${noClicks} PLEASE 😖🙏)`;
+  }
+});
+
+
+
+    </script>
+  </body>
+</html>
